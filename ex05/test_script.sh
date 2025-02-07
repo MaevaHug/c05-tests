@@ -81,6 +81,8 @@ run_test "4" "2" || all_tests_passed=false
 run_test "9" "3" || all_tests_passed=false
 # Test with nb == 16, expected output is 4 (since sqrt(16) is 4)
 run_test "16" "4" || all_tests_passed=false
+# Test with nb == 37, expected output is 0 (since sqrt(37) is not an integer)
+run_test "37" "0" || all_tests_passed=false	
 
 # Final result
 echo "$separator"
